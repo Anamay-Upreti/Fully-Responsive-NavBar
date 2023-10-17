@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id="toggleMenu" onclick="toggleMenu()"></div>
+<body>
+    <nav id="leftNav">
+        <ul>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About US</li>
+            <img src="logo.png" class="logoimg" alt="">
+        </ul>
+    </nav>
+
+
+    <script>
+        var toggleStatus = 1;
+		function toggleMenu() {
+			if (toggleStatus == 1) {
+				document.getElementById("leftNav").style.display  = "none";
+               toggleStatus = 0;
+			} else if (toggleStatus == 0) {
+				document.getElementById("leftNav").style.display = "block"; 
+				toggleStatus = 1;
+
+			}
+            
+            
+		}
+    </script>
+</body>
+</html>
